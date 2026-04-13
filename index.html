@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snip — URL Shortener</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Snip</div>
+    <p class="tagline">Trim the long. Keep the short.</p>
+  </header>
+
+  <!-- Main App -->
+  <main>
+
+    <!-- Shorten Form -->
+    <section class="shorten-section">
+      <div class="input-group">
+        <input
+          type="url"
+          id="longUrlInput"
+          placeholder="Paste your long URL here..."
+          autocomplete="off"
+        />
+        <button id="shortenBtn">Snip it</button>
+      </div>
+      <p id="errorMsg" class="error hidden">Please enter a valid URL.</p>
+    </section>
+
+    <!-- Result Box -->
+    <section id="resultBox" class="result-box hidden">
+      <p class="result-label">Your short link</p>
+      <div class="result-row">
+        <span id="shortUrlDisplay"></span>
+        <button id="copyBtn">Copy</button>
+      </div>
+      <p id="copyConfirm" class="copy-confirm hidden">Copied!</p>
+    </section>
+
+    <!-- Saved Links -->
+    <section class="history-section">
+      <div class="history-header">
+        <h2>Saved Links</h2>
+        <button id="clearAllBtn">Clear All</button>
+      </div>
+      <ul id="linkList">
+        <!-- Links injected by app.js -->
+      </ul>
+      <p id="emptyMsg" class="empty-msg">No links yet. Snip something!</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Runs locally in your browser. No data leaves your device.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
