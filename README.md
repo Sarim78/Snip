@@ -4,7 +4,7 @@ A lightweight, local URL shortener that runs entirely in your browser. No backen
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started!
 
 1. Clone or download this repo
 2. Open `index.html` in your browser
